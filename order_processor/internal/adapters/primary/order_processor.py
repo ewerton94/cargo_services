@@ -1,9 +1,9 @@
-from typing import List
+from typing import List, BinaryIO
 
 from core.domain.model import Order
 
 
 class OrderProcessorPandas:
 
-    def transform_file_in_orders(self, file: str) -> List[Order]:
+    async def transform_file_in_orders(self, file: BinaryIO) -> List[Order]:
         pass

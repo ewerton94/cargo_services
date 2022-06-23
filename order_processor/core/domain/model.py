@@ -1,11 +1,6 @@
 from datetime import date
-from enum import Enum
 
 from pydantic import BaseModel
-
-
-class CountryEnum(Enum, int):
-    cameroon: int = 237
 
 
 class OrderInput(BaseModel):
