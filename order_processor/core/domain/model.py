@@ -7,10 +7,12 @@ class OrderInput(BaseModel):
     id: int
     email: str
     phone_number: str
-    country: int
     parcel_weight: float
 
 
 class Order(OrderInput):
-    country: int
+    country: int = None
     date_created: date = None
+
+    class Config:
+        orm_mode = True

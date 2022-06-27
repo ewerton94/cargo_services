@@ -2,3 +2,7 @@ pydantic~=1.9.1
 fastapi~=0.78.0
 python-multipart~=0.0.5
 uvicorn~=0.17.6
+pandas~=1.4.2
+pyarrow~8.0.0
+asyncio_extras
+memory-profiler
